@@ -1,0 +1,9 @@
+prototype(Uxuan.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <Uxuan.Site:Component.Header />
+        {props.content}
+        <Uxuan.Site:Component.Footer />
+    `
+}

@@ -1,0 +1,29 @@
+
+'Uxuan.Site:Document.HomePage':
+  superTypes:
+    'Uxuan.Site:Document.AbstractPage': true
+    'Uxuan.Site:Constraint.Document.Restricted': true
+    'Uxuan.Site:Mixin.InspectorGeneral': true
+  ui:
+    label: i18n
+    icon: icon-globe
+  properties:
+    footerInfo:
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              a: true
+            placeholder: i18n
+    footerItems:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: general
+          editorOptions:
+            nodeTypes:
+              - 'Neos.Neos:Document'

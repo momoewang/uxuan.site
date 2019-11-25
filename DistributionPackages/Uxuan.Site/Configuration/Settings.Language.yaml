@@ -1,0 +1,38 @@
+
+Neos:
+  Flow:
+    i18n:
+      defaultLocale: zh
+  ContentRepository:
+    contentDimensions:
+      language:
+        label: Languages
+        icon: icon-language
+        # The default dimension that is applied when creating nodes without specifying a dimension
+        default: zh
+        # The default preset to use if no URI segment was given when resolving languages in the router
+        defaultPreset: zh
+        presets:
+          # de:
+          #   label: Deutsch
+          #   values:
+          #     - de
+          #   uriSegment: 'de'
+          en:
+            label: English
+            values:
+              - en
+            uriSegment: 'en'
+          zh:
+            label: Chinese
+            values:
+              - zh
+            uriSegment: ''
+  Neos:
+    userInterface:
+      defaultLanguage: zh
+      translation:
+        autoInclude:
+          Uxuan.Site:
+            - Main
+            - 'NodeTypes/*'
